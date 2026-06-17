@@ -33,6 +33,43 @@
 #dirty_dozen[0][1] ---> there are 2 lists and 0 is sublist 1 and 1 is sublist 2---> we are going to access sublist 1's  [1] indexed element
 
 
+# import random
+
+# radnom_heads_or_tails = random.randint(0,1)
+# if radnom_heads_or_tails == 0:
+#   print("Heads")
+# else:
+#   print("Tails")
+
+
+# friends=["Bob", "alice", "david","rosheni"]
+
+# # print(random.choice(friends))
+
+# random_index = random.randint(0,4)
+# print(friends[random_index])
+
+
+
+# student_scores = [10,20,30,40,50]
+# total_exam=sum(student_scores)
+# print(total_exam)
+
+# sum = 0
+# for score in student_scores:
+#   sum += score
+# print(sum)
+
+# student_scores = [10,20,30,40,50]
+
+# max_no = 10
+# for score in student_scores:
+#   if score > max_no:
+#     max_no = score
+  
+# print(max_no)
+
+
 #For loop
 # fruits = ["Apple", "Peach", "Pear"]
 # for fruit in fruits:
@@ -609,6 +646,47 @@
 # screen.onkey(move_forward, "space")
 
 #multiple objects from one class - instance
+
+#OOP - class inheritance
+#class inheritance - you can inherit both apperance(attributes), behaviour(methods)
+# class Fish(Animal):    #Fish is inherited from Animal class
+#    def __init__(self):
+#       super().__init__()   #Animal class attributes and methods are inherited using super keyword
+
+# Eg:-
+# class Animal:
+#    def __init__(self):
+#       self.num_eyes = 2
+
+#    def breathe(self):
+#       print("Inhale, exhale")
+
+# class Fish(Animal):
+#    def __init__(self):
+#       super().__init__() #this is reccomended but not strictly required
+
+#    def swim(self):
+#       print("moving in water")
+
+#    def breathe(self):
+#       super().breathe()
+#       print("Doing this underwater")
+
+# nemo = Fish()
+# nemo.swim()
+# nemo.breathe()
+# print(nemo.num_eyes)
+
+#Slicinng
+# piano_keys = ["a", "b", "c", "d", "e", "f", "g"]
+#Draw lines and see - before a line is 0 , between a and b is 1
+# print(piano_keys[2:5]) #['c', 'd', 'e']
+# # print(piano_keys[2:]) ['c', 'd', 'e', 'f', 'g']
+# print(piano_keys[:5]) #['a', 'b', 'c', 'd', 'e']
+# print(piano_keys[2:5:2]) ['c', 'e'] - 3rd one is increment
+#print(piano_keys[::-1]) ['g', 'f', 'e', 'd', 'c', 'b', 'a'] - reverse
+
+
 
 
 
