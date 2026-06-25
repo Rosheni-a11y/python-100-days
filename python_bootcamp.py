@@ -687,9 +687,64 @@
 #print(piano_keys[::-1]) ['g', 'f', 'e', 'd', 'c', 'b', 'a'] - reverse
 
 
+#How to work with files
+# file  = open("my_file.txt")
+# contents = file.read()
+# print(contents)
+
+# file.close() 
+# bcz it take some resources to free up space we need to close it - best way
+
+# with open("my_file.txt") as file:
+#   contents = file.read()
+#   print(contents)
+# #handles the clsing part after the operation finishes
+
+# with open("my_file.txt") as file:
+#   file.write("New text")
+
+#this will get an error msg like 
+# file.write("New text")
+#     ~~~~~~~~~~^^^^^^^^^^^^
+# io.UnsupportedOperation: not writable
+
+# as with open default is read only 
+# so we have to set the mode as write
+
+# with open("my_file.txt", mode = "w") as file:
+#   file.write("New text")
+#this replace the text with the thing we provided
+
+# to not replce but keep the existing text also and add new text we can use append
+# with open("my_file.txt", mode = "a") as file:
+#   file.write("New text")
 
 
+#new file created - only work in write mode
+# with open("new_file.txt", mode="w") as file:
+#   file.write("New Text")
 
+
+#relative and absolute file paths
+#Root folder - / represented by slash , in windows its C drive
+# / Root                      /
+#    Work folder              /Work
+#        report doc           /Work/report.doc
+#           project folder    /Work/Project
+#                 talk.ppt    /Work/Project/talk.ppt
+
+#Absolute file path - they always start off relative to the root
+#/ or C:, it is a file path thta starts from the origin, root of computer system
+#working directory - the folder of directory im currently working in
+#Relative file path -> ./talk.ppt - it tells look at the current folder which is im in project folder
+# if im in work folder - it would be ./Project/talk.ppt
+#we are currently working in project folder , how to access report.doc
+# ../report.doc -> currenlty in Project folder, coming out ofit getting into work folder and getting hold of report.doc
+# / Root         
+#    Work
+#         report.doc   
+#         main.py   -> so if im currently here if i want to go to report .doc
+#it is the same working directory so ./report.doc  or report.doc
 
 
 
